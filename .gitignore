@@ -1,0 +1,13 @@
+#Ignore files
+.sass-cache
+.sass-cache/*.*
+cache
+cache/*.*
+*.sublime-project
+*.sublime-workspace
+node_modules
+node_modules/*.*
+assets/dist
+assets/dist/*.*
+.env
+TODO
