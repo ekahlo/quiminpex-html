@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	});
 });
 
-anime({
-  targets: '.css-selector-demo .el',
-  translateX: 250
-});
+// anime({
+//   targets: '.css-selector-demo .el',
+//   translateX: 250
+// });
