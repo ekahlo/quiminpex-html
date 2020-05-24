@@ -231,6 +231,19 @@
 	}
 }
 
+#galery{
+	img{
+		transform: scale(1.1);
+		transition: ease-in-out all 0.5s;
+		&:hover{
+			transform: none !important;
+		}
+	}
+	a{
+		overflow: hidden;
+	}
+}
+
 #services{
 	&.img-bg{
 		background-repeat: no-repeat;
