@@ -103,6 +103,10 @@
 	}
 	li.nav-item{
 		@extend .hvr-underline-from-center;
+		&:before{
+			@extend .bg-primary;
+			height: 3px;
+		}
 	}
 	.nav-item{
 		&.dropdown{
