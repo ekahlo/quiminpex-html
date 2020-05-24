@@ -356,11 +356,11 @@
 			.cicle-one{
 				border: none !important;
 				@extend .bg-primary;
-				transition: all 2s ease;
+				transition: ease all 1.5s;
 			}
 			.cicle-two{
 				border: none !important;
-				transition: all 2s ease;
+				transition: ease all 1.5s;
 			}
 		}
 	}
