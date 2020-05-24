@@ -44,7 +44,7 @@ let jquerySrc			= nodeSrc +'jquery/dist/**/*';
 let select2				= nodeSrc +'select2/dist/**/*';
 let select2_bootstrap	= nodeSrc +'select2-theme-bootstrap4/dist/**/*';
 let hover				= nodeSrc +'hover.css/scss/**/*';
-let fancybox			= nodeSrc +'fancybox-master/**/*';
+let fancybox			= nodeSrc +'@fancyapps/fancybox/dist/**/*';
 let vendorsSrc			= [ bootstrapSrc, jquerySrc, select2, select2_bootstrap, hover, fancybox, ];
 let vendorsDist			= dist +'vendor/';
 
