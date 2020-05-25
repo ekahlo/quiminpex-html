@@ -373,6 +373,13 @@
 		transition: all 0.5s ease;
 	}
 }
+.a-icon-blue{
+	@extend .text-white;
+	&:hover{
+		color: rgb(255,76,76) !important;
+		transition: all 0.5s ease;
+	}
+}
 
 #footer{
 	&.img-bg{
