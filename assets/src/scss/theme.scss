@@ -331,6 +331,7 @@
 			filter: none;
 			opacity: 1;
 			transition: all .25s ease;
+			cursor: e-resize;
 		}
 		&:before{
 			z-index: 1 !important;
