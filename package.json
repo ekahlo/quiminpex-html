@@ -3,7 +3,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.4.1",
     "hover.css": "^2.3.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "select2": "^4.0.12",
     "select2-bootstrap-css": "^1.4.6",
     "select2-theme-bootstrap4": "^0.2.0-beta.6"
