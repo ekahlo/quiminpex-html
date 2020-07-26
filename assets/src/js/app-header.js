@@ -6,5 +6,8 @@ $(document).ready(function() {
 	$("#order .js-boxes").select2({
 	    minimumResultsForSearch: Infinity
 	});
+	$("#top-menu .js-boxes").select2({
+	    minimumResultsForSearch: Infinity
+	});
 });
 

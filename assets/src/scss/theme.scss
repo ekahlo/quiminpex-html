@@ -472,6 +472,9 @@
 	#header &-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
 			border-color: transparent transparent #fff transparent !important;
 	}
+	#top-menu &-container--default .select2-selection--single{
+			@extend .bg-transparent;
+	}
 }
 
 
