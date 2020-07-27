@@ -181,6 +181,10 @@
 	}
 }
 
+.qmicon-navegation:before{
+	@extend .text-qm-blue-light;
+}
+
 .carousel{
 	&-control{
 		&-prev,
