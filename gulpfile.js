@@ -28,6 +28,7 @@ let nodeSrc				= 'node_modules/';
 let jsSrc				= assetsSrc +'js/';
 let scssSrc				= assetsSrc +'scss/';
 let imagesSrc			= assetsSrc +'images/';
+let fontsSrc			= assetsSrc +'fonts/';
 
 /**
  * Asset dist
@@ -35,6 +36,7 @@ let imagesSrc			= assetsSrc +'images/';
 let jsDist				= dist +'js/';
 let cssDist				= dist +'css/';
 let imagesDist			= dist +'images/';
+let fontsDist			= dist +'fonts/';
 
 /**
  * Node Modules
@@ -64,7 +66,7 @@ function vendors(){
  * @since Cubalite 1.0
  */
 function clean(){
-	return del([cssDist, jsDist, imagesDist, vendorsDist]);
+	return del([cssDist, jsDist, imagesDist, vendorsDist, fontsDist]);
 }
 
 /**
@@ -102,7 +104,16 @@ function images(){
 		.pipe(dest(imagesDist));
 }
 
-exports.default = series( clean, vendors, js, scss, images );
+/**
+ * Copy assets/src/fonts/ directory to assets/dist/fonts/
+ *
+ * @since Cubalite 1.0
+ */
+function fonts(){
+	return src(fontsSrc + '*.*')
+		.pipe(dest(fontsDist));
+}
+exports.default = series( clean, vendors, js, scss, images, fonts, );
 
 /**
  * Watch files for changes
@@ -114,4 +125,5 @@ task('watch', () => {
 	watch(jsSrc + '*.js', series( js ));
 	watch(scssSrc +'*.scss', series( scss ));
 	watch(imagesSrc +'*.*', series( images ));
+	watch(fontsSrc +'*.*', series( fonts ));
 })
