@@ -233,10 +233,12 @@
 	}
 	h2{
 		top: 80%;
+		@include media-breakpoint-down(lg){
+	    	top: 78%;
+	    	font-size: 1.5rem !important;
+	    }
 	}
 }
-
-
 #about-us{
 	margin-top: -200px;
 	margin-left: 200px;
@@ -245,6 +247,27 @@
 	}
 	.hvr-outline-in::before{
 		border: rgba($primary, 0.8) solid 3px !important;
+	}
+
+	@include media-breakpoint-down(md){
+    	margin: 0 !important;
+		bottom: -12px;
+		left: 15px;
+		right: 15px;
+		p{
+			display: block;
+			padding-top: 1rem !important;
+			padding-bottom: 1rem !important;
+			text-align: center;
+		}
+    }
+	@include media-breakpoint-down(xs){
+		p{
+			font-size: 1.5rem;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		bottom: -12px;
 	}
 }
 
@@ -354,7 +377,11 @@
 			@extend .bg-qm-blue-light;
 		}
 	}
-
+	.column{
+		@include media-breakpoint-down(sm){
+		   	column-count: 4;
+		}
+	}
 }
 #export-services{
 	.cicle-one{
